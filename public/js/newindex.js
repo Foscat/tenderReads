@@ -5,8 +5,9 @@ $(document).on("click", "#tagGenerator", function(){
 
     $.ajax({
         url: "api/tags",
-        method: "PUT",
-        tag_name: inputTag
+        method: "POST",
+        contentType : "application/json",
+        data : JSON.stringify(inputTag)
     })
       .then(function(response){
         //   console.log(response);
