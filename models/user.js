@@ -35,6 +35,16 @@ var User = sequelize.define("User", {
     last_login: {
         type: Sequelize.DATE
     },
+    
+    mybooks: {
+        type: Sequelize.STRING
+    },
+
+    mytags: {
+        type: Sequelize.STRING
+    },
+
+
 
     status: {
     type: Sequelize.ENUM("active", "inactive"),

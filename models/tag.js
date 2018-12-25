@@ -1,5 +1,5 @@
 module.exports = function(sequelize, Sequelize) {
-    var Tag = sequelize.define("tags", {
+    var Tag = sequelize.define("Tag", {
         tag_id: {
             autoIncrement: true,
             primaryKey: true,

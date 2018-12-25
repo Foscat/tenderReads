@@ -33,3 +33,7 @@ CREATE TABLE user (
 	-- FOREIGN KEY(mybooks) REFERENCES books(book_index),
 	-- FOREIGN KEY (mytags) REFERENCES tags(tag_id)
 );
+
+INSERT INTO user (firstname, lastname, username, email) VALUES ("Kyle", "Foster", "k-fizzle", "fosc@cat.com");
+INSERT INTO books (book_name, book_apiId) VALUES ( "Basic Tent Camping", "l1LJCgAAQBAJ");
+INSERT INTO tags (tag_name) VALUE ("cooking");
