@@ -59,7 +59,7 @@ $(document).on("click", "#submitBtn", function(){
       });
 });
 
-$(document).on("click", ".book-save", function(){
+$(document).on("click", ".saveBook", function(){
 
     var bookName = $(this).attr("book_name");
     var bookID = $(this).attr("book_id");
