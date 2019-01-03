@@ -4,8 +4,8 @@ module.exports = function(sequelize, DataTypes) {
         tag_id: {
             type: DataTypes.INTEGER,
             autoIncrement: true,
-            primaryKey: true
-            
+            primaryKey: true,
+            allowNull: false
         },
     
         tag_name: DataTypes.STRING,
@@ -14,8 +14,6 @@ module.exports = function(sequelize, DataTypes) {
             type: DataTypes.BOOLEAN,
             defaultValue: false,
         },
-
-        // timestamps: false
        
     }, {
 
@@ -25,10 +23,6 @@ module.exports = function(sequelize, DataTypes) {
                     Tag.belongsTo(modules.User);
                 }
             }
-        // status: {
-        // type: DataTypes.ENUM("active", "inactive"),
-        // defaultValue: "active"
-        // }
     });
     return Tag;
 };
