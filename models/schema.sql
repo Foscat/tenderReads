@@ -8,6 +8,7 @@ CREATE TABLE tags
 	tag_id int NOT NULL AUTO_INCREMENT,
 	tag_name varchar(255) NOT NULL,
 	active_search BOOLEAN NOT NULL DEFAULT 0,
+	UserId VARCHAR(255),
 	PRIMARY KEY (tag_id)
 );
 
@@ -16,7 +17,7 @@ CREATE TABLE books
 	book_index int NOT NULL AUTO_INCREMENT,
 	book_name varchar(255) NOT NULL,
 	book_apiId VARCHAR(255) NOT NULL,
-	tag_id int,
+	UserId VARCHAR(255),
 	PRIMARY KEY (book_index)
 );
 
@@ -31,6 +32,3 @@ CREATE TABLE user (
   FOREIGN KEY (tag_id) REFERENCES tags(tag_id),
 	FOREIGN KEY (book_index) REFERENCES books(book_index)
 );
-
-SELECT * FROM user;
-select * from books;

@@ -15,6 +15,8 @@ module.exports = function(sequelize, DataTypes) {
     
         book_apiId: DataTypes.STRING,
 
+        UserId: DataTypes.STRING,
+
           
     }, {
         timestamps: false,
